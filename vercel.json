@@ -17,10 +17,10 @@
   "builds": [
     {
       "src": "app.py",
-      "use": "@vercel/python"
+      "use": "@vercel/python",
+      "config": {
+        "installCommand": "./build.sh"
+      }
     }
-  ],
-  "scripts": {
-    "build": "pip install -r requirements.txt && jupyter labextension install @voila-dashboards/jupyterlab-preview"
-  }
+  ]
 }
